@@ -1,0 +1,14 @@
+dbt_test:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      threads: 4
+      host: xxxxx
+      port: 5432
+      user: admin
+      pass: 'xxxxxx'
+      dbname: postgres
+      schema: dds
+
+# Profile dbt_test written to /Users/air/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
